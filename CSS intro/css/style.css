@@ -1,0 +1,99 @@
+/**
+ * fil: css/style.css
+ **/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+
+body{
+    background-color: burlywood; /* baggrundsfarve */
+    background-image: url(../images/DSC07760.JPG); /* baggrundsbillede */
+    background-size: cover; /* formater baggrundens størrelse */
+    background-repeat: no-repeat; /* baggrundsbilledet kun kommer én gang */
+    color: #ffffff; /* tekstfarve */
+}
+
+h1{
+    font-size: 50px;
+    font-family: 'Oleo Script', cursive;
+    margin-left: 500px;
+}
+
+p{
+    color: black; /* farven på teksten i p-tags */
+    background-color: beige; /* baggrunden på teksten */
+    width: 33%; /* hvor meget teksten skal fylde på skærmen */
+    font-size: 25px; /* størrelse på teksten - kan måles i px, rem og %*/
+    
+    /* skrifttype - importeret fra Google Fonts */
+    font-family: 'Amatic SC', cursive;
+    
+    padding: 24px; /* firkanten udenom teksten */
+    margin: 48px; /* sidens margin */
+}
+
+/* adressere en id - startes med # herefter navn på id'et */
+#et{
+    position: absolute; /* rykke rundt på afsnittets position */
+    top: 250px;
+    left: 750px;
+    color: chocolate;
+    transform: rotate(20deg); /* rotering */
+}
+
+/* adressere class - startes med . herefter navn på class */
+.to{
+    position: relative;
+    top: 35px;
+    color: black;
+    margin-left: 200px;
+    opacity: 0.7; /* gennemsigtigthed af billeder og bokse */
+}
+
+#gallerikasse{
+    background-color: #ffffff;
+}
+
+/* billedegalleri */
+.galleri{
+    position: relative;
+    float: right;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+}
+
+/* en menu */
+nav{
+    position: fixed; /* sætter menuen fast */
+    top: 100px;
+    z-index: 100;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0,5em;
+    width: 100%;
+}
+
+nav ul li a {
+    font-family: 'Oleo Script', cursive;
+    font-size: 25px;
+    text-decoration: none; /* fjerne linje under teksten */
+    color: chocolate;
+    padding: 7em; /* mellemrum mellem orderne */
+}
+
+/* farven når musen går hen over noget */
+nav ul li a:hover {
+    color:black
+}
+
+nav ul li {
+    display: inline;
+}
+
+footer{
+    font-size: 25px;
+    font-family: 'Monoton', cursive;
+}

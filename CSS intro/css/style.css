@@ -46,9 +46,9 @@ p{
 /* adressere class - startes med . herefter navn på class */
 .to{
     position: relative;
-    top: 35px;
+    top: 45px;
     color: black;
-    margin-left: 200px;
+    margin-left: 300px;
     opacity: 0.7; /* gennemsigtigthed af billeder og bokse */
 }
 

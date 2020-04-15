@@ -1,0 +1,62 @@
+
+/* grid lay out: big screen */
+.container {
+	display: grid;
+	grid-template-areas:
+		'header header header header header header'
+		'menu   menu   main   main   right  right'
+		'menu   menu   footer footer footer footer'; /* note: quotation marks */
+	grid-gap: 10px;
+	background-color: silver;
+	padding: 10px;
+}
+
+/* asign elements, classes or id's to grid areas */
+header {
+	grid-area: header;
+}
+
+nav {
+	grid-area: menu;
+}
+
+main {
+	grid-area: main;
+}
+
+#right {
+    /* yes: you can use an id or classes */
+	grid-area: right;
+}
+
+footer {
+	grid-area: footer;
+}
+
+/* Color, text size, padding */
+header,
+nav,
+main,
+aside,
+footer {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+}
+
+/* Mobile devices: just one column */
+@media only screen and (max-width: 600px) {
+	.container {
+		display: grid;
+		grid-template-areas:
+			'header'
+			'menu'
+			'main'
+			'right'
+			'footer';
+		grid-gap: 10px;
+		background-color: silver;
+		padding: 10px;
+	}
+}

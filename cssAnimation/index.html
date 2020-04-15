@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS animation</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <link rel="icon" type="image/x-icon" href="" />
+
+    <style>
+        #anima {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation-name: redBlue;
+            animation-duration: 4s;
+
+        }
+
+        /* keyframe: from, to */
+        @keyframes redBlue {
+            from {
+                background-color: red;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        /* keyframe: % */
+
+        /*
+        @keyframes myAnim {
+            0% {
+                background-color: green;
+            }
+
+            25% {
+                background-color: greenyellow;
+            }
+
+            50% {
+                background-color: seagreen;
+            }
+
+            100% {
+                background-color: green;
+            }
+        }
+        */
+
+    </style>
+
+</head>
+
+<body>
+    <div id="anima"></div>
+</body>
+
+</html>

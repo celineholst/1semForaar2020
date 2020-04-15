@@ -1,0 +1,21 @@
+/**
+ * fil: css/style.css
+ **/
+#container {
+    display: flex;
+    height: 350px;
+    /* Specifying flow direction*/
+    flex-direction: row;
+    /* Wrapping onto multible lines*/
+    flex-wrap: wrap;
+    /* Aligning on the main axis */
+    justify-content: flex-start;
+}
+
+.box {
+    width: 25%;
+}
+
+.box box1 {
+    color: aqua;
+}

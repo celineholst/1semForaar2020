@@ -1,0 +1,103 @@
+/**
+ * Exercise: Mobile First / Flexbox
+ **/
+
+/* 0. Generelle variable  */
+:root {
+	/* colors */
+	--resp-bg-col: lightblue;
+	--alt-col: red;
+	--col-wh: #fff;
+	--col-bl: #000;
+
+	/* fonts */
+	font-family: sans-serif;
+	font-size: 17px;
+}
+
+/* headings, paragraphs etc. */
+h2,
+h3,
+p {
+	padding-bottom: .4rem;
+}
+
+h1, h2, h3 {
+	color: var(--alt-col);
+}
+
+/* images */
+img {
+	max-width: 100%;
+}
+
+/* layout */
+.wrap {
+	display: flex;
+	justify-content: center;
+}
+
+.wrap main {
+	flex-grow: 2;
+	margin: 2rem;
+}
+
+.wrap aside {
+	flex-grow: 1;
+	margin: 2rem;
+}
+
+#logo img {
+	width: 35px;
+	height: 35px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	main {
+		background-color: var(--resp-bg-col);
+	}
+
+	/* fonts (size?) */
+	
+	/* navigation <nav> */
+	nav {}
+
+	nav ul {}
+
+	nav ul li {}
+
+	nav ul li a {}
+
+	
+	/* content area */
+	.wrap {
+		/* end flexbox here */
+		display: block;
+	}
+
+	.wrap main {
+		margin: 1rem;
+	}
+
+	.wrap aside {
+		margin: 1rem;
+	}
+
+	/* images (trick: width 100%) */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+/* Print */
+/* @media print { ... } */
